@@ -61,6 +61,11 @@ nav {
   transform: translate(-15%, 300%) scale(1.4);
 }
 
+#name-container h4 {
+  font-style: italic;
+}
+
+
 /* NAVIGATION LIST */
 
 #nav-list {

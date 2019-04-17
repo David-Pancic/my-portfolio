@@ -1,0 +1,76 @@
+#hero {
+  background: url("../images/hero/heroalpha.png");
+  background-size: cover;
+  height: 70vh;
+  padding: 15vh 20px 0;
+  text-align: center;
+  /* border: 1px solid green; */
+}
+
+@media only screen and (min-width: 755px) {
+  #hero {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+
+@media only screen and (min-width: 578px) and (max-width: 1160px) {
+  #hero {
+    padding-top: 24vh;
+  }
+}
+
+/* #hero-container {} */
+
+#hero img {
+  width: 250px;
+  border-radius: 80px;
+}
+
+@media only screen and (min-width: 950px) {
+  #hero img {
+    width: 325px;
+    border-radius: 90px;
+  }
+}
+
+@media only screen and (min-width: 1160px) {
+  #hero img {
+    width: 400px;
+    border-radius: 100px;
+  }
+}
+
+#hero p {
+  color: black;
+  font-size: 2rem;
+  font-weight: 600;
+  background-color: rgba(256, 256, 256, 0.7);
+  border-radius: 20px;
+  display: inline-block;
+  width: auto;
+  padding: 4px 15px;
+}
+
+@media only screen and (min-width: 950px) {
+  #hero p {
+    font-size: 2.5rem;
+  }
+}
+
+@media only screen and (min-width: 1160px) {
+  #hero p {
+    font-size: 3rem;
+  }
+}
+
+#hero p em {
+  color: #C60021;
+  font-weight: 800;
+}
+
+#hero p span {
+  font-style: italic;
+  /* background-color: rgba(198,0,33,0.3); */
+}
