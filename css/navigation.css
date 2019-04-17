@@ -2,23 +2,25 @@ nav {
   display: block;
   text-align: center;
   width: 100%;
-  /* For testing */
-  /* border: 5px solid green; */
 }
 
-/* nav img {
+#nav-bar {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  height: auto;
+  /* max-height: 65px; */
   position: fixed;
-  left: 10px;
-  top: 10px;
-  border: 4px solid black;
-  border-radius: 15px;
-  background: url("../images/bstract grey background/640x426opacity60.jpg");
-  width: 50px;
-  display: block;
-} */
+  top: 5px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 0;
+}
 
-nav button {
+#nav-button {
   background-image: url("../images/miscellaneous/navigation_icon.svg");
+  background-color: rgba(198,0,33,0.7);
   background-size: 80%;
   background-repeat: no-repeat;
   background-position: center;
@@ -27,40 +29,56 @@ nav button {
   border: 4px solid black;
   border-radius: 20px;
   text-align: center;
-  position: fixed;
-  left: 10px;
-  top: 10px;
-  background-color: rgba(198,0,33,0.7);
+  position: relative;
   z-index: 1;
+  margin-left: 10px;
 }
 
-nav button:active,
-nav button:hover {
-  /* background-image: url("../images/miscellaneous/close_icon.svg"); */
+#nav-button:active,
+#nav-button:hover {
   background-color: #C60021;
 }
 
-nav ul {
-  font-size: 2rem;
+#name-container {
+  border-radius: 100px;
+  background-image: url("../images/hero/heroalpha.png");
+  background-color: #C60021;
+  display: inline-block;
+  padding: 5px 20px;
+  text-align: center;
+  margin-right: 10px;
+  transition: transform 1s 0.5s;
+  min-width: 238px;
+}
+
+@media only screen and (min-width: 578px) {
+  #name-container {
+    display: none;
+  }
+}
+
+#name-container.showoff {
+  transform: translate(-15%, 300%) scale(1.4);
+}
+
+/* NAVIGATION LIST */
+
+#nav-list {
+  font-size: 1.5rem;
   font-weight: 700;
   height: auto;
   width: 100%;
   max-width: 1300px;
   position: fixed;
-
+  top: 35px;
   right: 0;
   left: 0;
   margin-right: auto;
   margin-left: auto;
-  /* For testing */
-  /* border: 1px solid red;/ */
-
-  /* left: 50%;
-  transform: translateX(-50%); */
 }
 
 @supports (display: flex) {
-  nav ul {
+  #nav-list {
     align-items: center;
     display: flex;
     flex-direction: row;
@@ -69,7 +87,13 @@ nav ul {
   }
 }
 
-nav a {
+@media only screen and (min-width: 578px) {
+  #nav-list {
+    position: static;
+  }
+}
+
+#nav-list a {
   background: url("../images/abstract grey background/640x426opacity40.jpg");
   border: 3px solid black;
   border-radius: 100px;
@@ -83,7 +107,7 @@ nav a {
 
 @supports (display: flex) {
   @media only screen and (min-width: 578px) {
-    nav a {
+    #nav-list a {
       margin-left: 1px;
       margin-right: 1px
     }
@@ -91,52 +115,52 @@ nav a {
 }
 
 @media only screen and (min-width: 1160px) {
-  nav a {
+  #nav-list a {
     min-width: 24.8%;
     /* min-width: calc(25% - 2px); */
   }
 }
 
-nav a:hover,
-nav a:active {
+#nav-list a:hover,
+#nav-list a:active {
   border-color: #C60021;
   color: #C60021;
 }
 
-nav li {
+#nav-list li {
   padding: 0.5rem 0;
   height: 100%;
 }
 
 @supports (display: flex) {
-  nav li {
+  #nav-list li {
     display: flex;
     justify-content: center;
     align-items: center;
   }
 }
 
-nav a:hover span,
-nav a:active span {
+#nav-list a:hover span,
+#nav-list a:active span {
   transform: scale(1.1);
 }
 
-nav a,
-nav a:hover,
-nav li span,
-nav li:hover span {
+#nav-list a,
+#nav-list a:hover,
+#nav-list li span,
+#nav-list li:hover span {
   transition-property: transform, border-color, color;
   transition-duration: 0.5s;
 }
 
 @media only screen and (max-width: 577px) {
-  nav ul.hide {
+  #nav-list.hide {
     display: none;
   }
 }
 
 @media only screen and (min-width: 578px) {
-  nav button {
+  #nav-button {
     display: none;
   }
 }

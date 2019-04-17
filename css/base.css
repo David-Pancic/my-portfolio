@@ -4,19 +4,19 @@
 
 body {
   background-color: #E3E3E3;
-  background-image: url("images/abstract grey background/640x426.jpg");
+  background: url("../images/abstract grey background/640x426.jpg");
   font-family: 'Montserrat';
 }
 
 @media only screen and (min-width: 641px) {
   body {
-    background-image: url("images/abstract grey background/1280x853.jpg");
+    background-image: url("../images/abstract grey background/1280x853.jpg");
   }
 }
 
 @media only screen and (min-width: 1281px) {
   body {
-    background-image: url("images/abstract grey background/2500x1667.jpg");
+    background-image: url("../images/abstract grey background/2500x1667.jpg");
   }
 }
 
@@ -28,6 +28,17 @@ h1 {
 h2 {
   font-size: 1.5em;
   font-weight: 600;
+  color: #E3E3E3;
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+
+h4 {
+  font-weight: 600;
+  font-size: 1rem;
   color: #E3E3E3;
 }
 
