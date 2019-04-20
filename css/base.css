@@ -4,19 +4,23 @@
 
 body {
   background-color: #E3E3E3;
-  background: url("../images/abstract grey background/640x426.jpg");
+  /* background: url("../images/abstract grey background/640x426.jpg"); */
+  background: url("../images/abstract grey background/extended 640x852.jpg");
   font-family: 'Montserrat';
 }
 
 @media only screen and (min-width: 641px) {
   body {
-    background-image: url("../images/abstract grey background/1280x853.jpg");
+    /* background-image: url("../images/abstract grey background/1280x853.jpg"); */
+    background-image: url("../images/abstract grey background/extended 1280x1706.jpg");
   }
 }
 
+
 @media only screen and (min-width: 1281px) {
   body {
-    background-image: url("../images/abstract grey background/2500x1667.jpg");
+    /* background-image: url("../images/abstract grey background/2500x1667.jpg"); */
+    background-image: url("../images/abstract grey background/extended 2500x3334.jpg");
   }
 }
 

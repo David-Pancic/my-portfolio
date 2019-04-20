@@ -3,12 +3,13 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>David Pancic - Front-end Developer</title>
+    <title>David Pančić - Front-end Developer</title>
     <meta name="description" content="I use HTML5, CSS3 and Javascript to build responsive fast websites.">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/navigation.css">
     <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/technologies.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800" rel="stylesheet">
   </head>
   <body>
@@ -21,10 +22,10 @@
             <h4>Front-end Developer</h4>
           </div>
           <ul id="nav-list" class="hide">
-            <a href="#"><li><span>Top</span></li></a><!--
-         --><a href="#"><li><span>About me</span></li></a><!--
-         --><a href="#"><li><span>Technologies</span></li></a><!--
-         --><a href="#"><li><span>Placeholder</span></li></a>
+            <a href="#" class="transparent"><li><span>Top</span></li></a><!--
+         --><a href="#" class="transparent"><li><span>Technologies</span></li></a><!--
+         --><a href="#" class="transparent"><li><span>Code</span></li></a><!--
+         --><a href="#" class="transparent"><li><span>Placeholder</span></li></a>
           </ul>
         </div>
       </nav>
@@ -32,17 +33,50 @@
     <main>
       <section id="hero">
         <!-- <div id="hero-container"> -->
-        <img src="https://placekitten.com/640/480" alt="Kitten placeholder">
+        <img src="https://placekitten.com/641/480" alt="Kitten placeholder">
         <p>Hi, my name is <em>David</em><br>I'm a <span>Front-end developer</span></p>
         <!-- </div> -->
       </section>
-      <section class="about"></section>
-      <section class="technologies"></section>
+      <section id="technologies">
+        <p id="tech-intro">I use <em>HTML5</em>, <em>CSS3</em> and <em>JavaScript</em> to build fast, responsive and accesible websites</p>
+        <section class="technology" id="html">
+          <img class="logo" src="images/logos/HTML5.svg" alt="HTML5 logo">
+          <ul>
+            <li>Semantic</li>
+            <li>Important stuff</li>
+            <li>Cool stuff</li>
+            <li>Not placeholder</li>
+            <li>Magic</li>
+          </ul>
+        </section>
+        <section class="technology" id="css">
+          <img class="logo" src="images/logos/CSS3.svg" alt="CSS3 logo">
+          <ul>
+            <li>New features</li>
+            <li>Old features for old browsers</li>
+            <li>Animation</li>
+            <li>Real word</li>
+            <li>Something real</li>
+          </ul>
+        </section>
+        <section class="technology" id="js">
+          <img class="logo" src="images/logos/JS5.svg" alt="JS5 logo">
+          <ul>
+            <li>ES6</li>
+            <li>Readable code</li>
+            <li>Example</li>
+            <li>Impressive</li>
+            <li>Not example</li>
+          </ul>
+        </section>
+        <p id="tech-outro">I've also used some other technologies in the past like <em>Python 3</em>, <em>Matlab</em>, <em>Mathematica</em>, <em>Geogebra</em> and others</p>
+      </section>
+      <section class="code"></section>
       <section class="placeholder"></section>
     </main>
-    <footer>
-
-    </footer>
+    <footer></footer>
+    <img src="https://placekitten.com/100/1000" alt="Kitten placeholder">
   </body>
   <script type="text/javascript" src="js/navigation.js"></script>
+  <script type="text/javascript" src="js/technologies.js"></script>
 </html>

@@ -1,0 +1,151 @@
+#technologies {
+  text-align: center;
+  /* padding-top: 100px; */
+  /* border: 1px solid red; */
+}
+
+/* tech-intro */
+
+#technologies p {
+  color: black;
+  /* font-size: 1rem; */
+  font-weight: 600;
+  background-color: rgba(256, 256, 256, 0.7);
+  border-radius: 40px;
+  /* display: inline-block; */
+  width: auto;
+  padding: 10px 25px;
+  border: 3px solid black;
+  margin: 50px auto;
+}
+
+#tech-intro {
+  font-size: 1rem;
+}
+#tech-outro {
+  font-size: 1rem;
+}
+
+@media only screen and (min-width: 950px) {
+  /* #technologies p {
+    font-size: 1.5rem;
+  } */
+  #tech-intro {
+    font-size: 1.5rem;
+  }
+  #tech-outro {
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (min-width: 1160px) {
+  /* #technologies p {
+    font-size: 2rem;
+  } */
+  #tech-intro {
+    font-size: 2rem;
+  }
+  #tech-outro {
+    font-size: 1.5rem;
+  }
+}
+
+#technologies p em {
+  color: #C60021;
+  font-weight: 700;
+}
+
+@media only screen and (min-width: 950px) {
+  .technology {
+    display: inline-block;
+    width: 33%;
+  }
+  @supports (display: grid) {
+    .technology {
+      width: auto;
+    }
+    #technologies {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-auto-rows: auto;
+      grid-template-areas:
+      "intro intro intro"
+      "html  css   js"
+      "outro outro outro";
+    }
+    #tech-intro {
+      grid-area: intro;
+    }
+    #html {
+      grid-area: html;
+    }
+
+    #css {
+      grid-area: css;
+    }
+
+    #js {
+      grid-area: js;
+    }
+
+    #tech-outro {
+      grid-area: outro;
+    }
+  }
+
+  .logo {
+    transition: transform 0.5s;
+  }
+
+  /*
+    The translateX = bottom margin of p
+   */
+
+  #html .logo.together {
+    transform: translate(22vw, -150px) scale(0.75);
+  }
+
+  #css .logo.together {
+    transform: translate(0, -150px) scale(0.75);
+  }
+
+  #js .logo.together {
+    transform: translate(-22vw, -150px) scale(0.75);
+  }
+
+}
+
+.logo {
+  width: 150px;
+}
+
+.technology {
+  transition: transform 0.5s;
+  /* border: 1px solid blue; */
+  margin-top: 100px
+}
+
+.technology.emphasized {
+  transform: scale(1.1);
+}
+
+.technology ul {
+  background-color: rgba(256, 256, 256, 0.7);
+  border-radius: 60px;
+  /* list-style: circle inside; */
+  /* border: 1px solid green; */
+  text-decoration: underline double #C60021;
+
+  /* Only for wide screens */
+  margin-left: 2vw;
+}
+
+.technology ul:last-of-type {
+  margin-right: 2vw;
+}
+
+.technology li {
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 2;
+}
