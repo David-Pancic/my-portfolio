@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/navigation.css">
     <link rel="stylesheet" href="css/hero.css">
     <link rel="stylesheet" href="css/technologies.css">
+    <link rel="stylesheet" href="css/code.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800" rel="stylesheet">
   </head>
   <body>
@@ -18,7 +19,7 @@
         <div id="nav-bar">
           <button id="nav-button"></button>
           <div id="name-container" class="showoffZ">
-            <h3>David Pančić</h1>
+            <h3>David Pančić</h3>
             <h4>Front-end Developer</h4>
           </div>
           <ul id="nav-list" class="hide">
@@ -32,10 +33,8 @@
     </header>
     <main>
       <section id="hero">
-        <!-- <div id="hero-container"> -->
         <img src="https://placekitten.com/641/480" alt="Kitten placeholder">
         <p>Hi, my name is <em>David</em><br>I'm a <span>Front-end developer</span></p>
-        <!-- </div> -->
       </section>
       <section id="technologies">
         <p id="tech-intro">I use <em>HTML5</em>, <em>CSS3</em> and <em>JavaScript</em> to build fast, responsive and accesible websites</p>
@@ -71,7 +70,20 @@
         </section>
         <p id="tech-outro">I've also used some other technologies in the past like <em>Python 3</em>, <em>Matlab</em>, <em>Mathematica</em>, <em>Geogebra</em> and others</p>
       </section>
-      <section class="code"></section>
+      <section id="code">
+        <h3>Examples of my code:</h3>
+        <div id="examples-container">
+          <section class="example" id="portfolio">
+            <a href="https://github.com/David-Pancic/my-portfolio"><img src="./images/github/GitHub-Mark-32px.png" alt="GitHub mark"></a>
+            <p>Github link for this very website<br>Explanation about the project</p>
+          </section>
+          <section class="example" id="chess">
+            <a href="https://github.com/David-Pancic/chess"><img src="./images/github/GitHub-Mark-32px.png" alt="GitHub mark"></a>
+            <a href="./chess.index"><img src="./images/miscellaneous/pawnBlack.svg" alt="A black pawn"></a>
+            <p>Github link to a chess game I made<br>Explanation about the project</p>
+          </section>
+        </div>
+      </section>
       <section class="placeholder"></section>
     </main>
     <footer></footer>

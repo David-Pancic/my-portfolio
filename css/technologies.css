@@ -1,6 +1,6 @@
 #technologies {
   text-align: center;
-  /* padding-top: 100px; */
+  /* padding-top: 1re00px; */
   /* border: 1px solid red; */
 }
 
@@ -13,7 +13,7 @@
   background-color: rgba(256, 256, 256, 0.7);
   border-radius: 40px;
   /* display: inline-block; */
-  width: auto;
+  /* width: auto; */
   padding: 10px 25px;
   border: 3px solid black;
   margin: 50px auto;
