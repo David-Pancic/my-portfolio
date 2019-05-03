@@ -55,6 +55,13 @@
   font-weight: 700;
 }
 
+.technology {
+  transition: transform 0.5s;
+  margin-top: 100px;
+  width: 80%;
+  margin: 100px auto 0;
+}
+
 @media only screen and (min-width: 950px) {
   .technology {
     display: inline-block;
@@ -119,19 +126,13 @@
   width: 150px;
 }
 
-.technology {
-  transition: transform 0.5s;
-  /* border: 1px solid blue; */
-  margin-top: 100px
-}
-
 .technology.emphasized {
   transform: scale(1.1);
 }
 
 .technology ul {
   background-color: rgba(256, 256, 256, 0.7);
-  border-radius: 60px;
+  border-radius: 80px;
   /* list-style: circle inside; */
   /* border: 1px solid green; */
   text-decoration: underline double #C60021;

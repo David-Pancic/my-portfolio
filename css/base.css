@@ -7,9 +7,10 @@ body {
   /* background: url("../images/abstract grey background/640x426.jpg"); */
   background: url("../images/abstract grey background/extended 640x852.jpg");
   font-family: 'Montserrat';
+  /* padding: 20px 20px 0; */
 }
 
-@media only screen and (min-width: 641px) {
+@media only screen and (min-width: 641px) and (max-width: 1280px) {
   body {
     /* background-image: url("../images/abstract grey background/1280x853.jpg"); */
     background-image: url("../images/abstract grey background/extended 1280x1706.jpg");
