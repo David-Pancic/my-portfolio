@@ -1,13 +1,18 @@
 footer {
   background: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding: 20px;
 }
 
 @media only screen and (min-width: 658px) {
   footer {
-    justify-content: space-around;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
 }
 
@@ -26,6 +31,8 @@ footer {
 @media only screen and (min-width: 658px) {
   #footer-name-container {
     display: inline-block;
+    /* For browsers that don't support Flexbox */
+    float: right;
   }
 }
 
@@ -33,6 +40,7 @@ footer {
   color: #F6F6F8;
   font-size: 1.2rem;
   text-align: center;
+  display: inline-block;
 }
 
 @media only screen and (min-width: 362px) {
@@ -53,13 +61,9 @@ footer {
   color: #C60021;
   font-weight: 600;
   font-style: italic;
-  /* background-color: rgba(256, 256, 256, 0.7);
-  background-color: #C60021; */
   border: 2px solid #C60021;
   padding: 5px 10px;
   border-radius: 20px;
-  background: url("../images/abstract grey background/640x426opacity40.jpg");
   background: url("../images/abstract grey background/640x426opacity60.jpg");
-  /* background: url("../images/abstract grey background/640x426.jpg"); */
   margin-top: 5px;
 }

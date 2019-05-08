@@ -40,11 +40,6 @@ function logosEffectWide(vh, vw) {
   // find the distance from the top of one of the lists and top of viewport
   let listTop = list.getBoundingClientRect().top;
 
-  // testing
-  console.log(`intro: ${Math.round(introBot)} < ${Math.round(vh)} ${introBot < vh} listTop: ${Math.round(listTop)} > ${Math.round(vh)} ${listTop > vh*0.9}`);
-  // console.log(`${Math.round((bot / vh) * 100) / 100}`);
-  // console.log(`${Math.round((listTop / vh) * 100) / 100}`);
-
   // add or remove class "together" when appropriate
   if (introBot < vh * 1 && listTop > vh * 1) {
     for (logo of logos) {

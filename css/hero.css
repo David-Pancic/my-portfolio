@@ -9,9 +9,14 @@
 
 @media only screen and (min-width: 652px) {
   #hero {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -46,6 +51,7 @@
   color: black;
   font-size: 1.5rem;
   font-weight: 600;
+  background-color: rgb(256, 256, 256);
   background-color: rgba(256, 256, 256, 0.7);
   border-radius: 60px;
   display: inline-block;
@@ -74,5 +80,4 @@
 
 #hero p span {
   font-style: italic;
-  /* background-color: rgba(198,0,33,0.3); */
 }
