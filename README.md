@@ -1,6 +1,6 @@
 This is my portfolio website.
 
-It is live on [davidpancic.com](http://www.davidpancic.com/)
+It is live on [https://www.davidpancic.com/](https://www.davidpancic.com/)
 
 The website is made using exclusively HTML5, CSS3 and JS.
 It's responsive, designed for viewports from 320px to 1500px.
